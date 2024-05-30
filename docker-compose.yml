@@ -1,0 +1,43 @@
+services:
+  postgre-house-db:
+    container_name: postgre-house-db
+    image: postgres:alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: sidof
+      POSTGRES_PASSWORD: sidof1/@
+      PGDATA: /data/postgres
+    volumes:
+      - network-house:/data/postgres
+    ports:
+      - 5433:5432
+    expose:
+      - 5432
+    networks:
+      - network-house
+
+#  house-rent-api:
+#    container_name: house-rent-api
+#    image: house-rent-api:v1
+#    ports:
+#      - 80:8084
+#    depends_on:
+#      - postgre-house-db
+#    environment:
+#      SPRING_APPLICATION_JSON: '{
+#            "spring.datasource.url"  : "jdbc:postgresql://postgre-house-db:5432/dbhouse",
+#            "spring.datasource.username" : "sidof",
+#            "spring.datasource.password" : "sidof1/@",
+#            "spring.jpa.properties.hibernate.dialect" : "org.hibernate.dialect.PostgreSQLDialect",
+#            "spring.jpa.hibernate.ddl-auto" : "update",
+#            "spring.profiles.active" : "prod"
+#          }'
+#    networks:
+#      - network-house
+
+
+networks:
+  network-house:
+    driver: bridge
+volumes:
+  network-house:

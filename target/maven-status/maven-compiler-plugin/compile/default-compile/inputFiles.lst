@@ -1,0 +1,8 @@
+/home/sidof/workspace/api/house-for-rent-backend/src/main/java/com/sidof/HouseForRentApplication.java
+/home/sidof/workspace/api/house-for-rent-backend/src/main/java/com/sidof/config/OpenApiConfig.java
+/home/sidof/workspace/api/house-for-rent-backend/src/main/java/com/sidof/enume/HouseType.java
+/home/sidof/workspace/api/house-for-rent-backend/src/main/java/com/sidof/model/House.java
+/home/sidof/workspace/api/house-for-rent-backend/src/main/java/com/sidof/repo/HouseRepo.java
+/home/sidof/workspace/api/house-for-rent-backend/src/main/java/com/sidof/repo/HouseRepository.java
+/home/sidof/workspace/api/house-for-rent-backend/src/main/java/com/sidof/service/HouseService.java
+/home/sidof/workspace/api/house-for-rent-backend/src/main/java/com/sidof/service/implementation/HouseServiceImplementation.java

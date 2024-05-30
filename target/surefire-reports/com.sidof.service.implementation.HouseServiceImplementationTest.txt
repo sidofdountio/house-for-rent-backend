@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.sidof.service.implementation.HouseServiceImplementationTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.747 s -- in com.sidof.service.implementation.HouseServiceImplementationTest

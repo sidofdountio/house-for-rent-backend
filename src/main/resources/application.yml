@@ -1,0 +1,32 @@
+server:
+  port: 8084
+  error:
+    include-message: always
+    include-biding: always
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 50MB
+
+  profiles:
+    active: dev
+
+  datasource:
+    url: jdbc:postgresql://localhost:5433/dbhouse
+    username: sidof
+    password: sidof1/@
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+application:
+  title: House for rent app
+  version: v1.0.0
+  file:
+    upload:
+      photos-output-path: ./upload
