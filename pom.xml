@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.sidof</groupId>
 	<artifactId>house-for-rent</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>house-for-rent</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
@@ -26,7 +26,6 @@
 				<spring.profiles.active>dev</spring.profiles.active>
 			</properties>
 		</profile>
-
 		<profile>
 			<id>prod</id>
 			<properties>
